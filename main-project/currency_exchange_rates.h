@@ -4,14 +4,15 @@
 #include <string>
 
 struct adress {
+    std::string city;
     std::string street;
     int number;
 };
 
 struct exchangeRate {
     std::string bank_name;
-    int purchase;
-    int sale;
+    double purchase;
+    double sale;
     adress bank_adress;
 };
 
