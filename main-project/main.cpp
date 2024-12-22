@@ -10,6 +10,7 @@ int main()
     std::cout << "Laboratory work #8. GIT\n";
     std::cout << "Variant #4. Currency exchange rates\n";
     std::cout << "Author: Ilya Eliseev\n";
+    std::cout << "Group: 24PIng_1D\n";
 
     try
     {
