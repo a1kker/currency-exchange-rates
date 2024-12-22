@@ -1,0 +1,7 @@
+Belarusbank 2.6 2.8 Vitebsk Frunze 13
+Belinvestbank 3.0 3.5 Vitebsk Lenina 22
+Sberbank 2.7 2.8 Vitebsk Smolenskaya 23
+Belagroprombank 3.9 4.1 Vitebsk Chapaeva 12
+Sberbank 2.8 2.9 Vitebsk Frunze 22
+Belarusbank 2.2 2.3 Vitebsk Pravdy 45
+Belarusbank 2.0 2.2 Vitebsk Smolenskaya 34
