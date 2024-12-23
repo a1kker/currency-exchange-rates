@@ -4,9 +4,10 @@
 #include "currency_exchange_rates.h"
 #include "file_reader.h"
 #include "filter.h"
+#include "sort.h"
 
 void printRates(std::vector<exchangeRate>& rates) {
-    for (int i = 0; i < rates.size(); i++)
+    for (int i = 0; i < rates.size() - 1; i++)
     {
         std::cout << "Bank........: ";
         std::cout << rates[i].bank_name;
@@ -46,6 +47,7 @@ int main()
 
     std::cout << "1. Filter by bank name(Belarusbank)" << std::endl;
     std::cout << "2. Filter by sale(<2.5)" << std::endl;
+    std::cout << "3. Sort" << std::endl;
 
     int choice;
     std::cin >> choice;
@@ -63,9 +65,21 @@ int main()
         std::cout << "****   sale<2.5   ****\n\n";
         break;
 
+    case 3:
+        int sortMethod, sortCriterion;
+        std::cout << "1.Bubble Sort" << std::endl;
+        std::cout << "2.Merge Sort" << std::endl;
+        std::cin >> sortMethod;
+
+        std::cout << "1. By descending difference between sell and buy rates" << std::endl;
+        std::cout << "2. By ascending bank name and address" << std::endl;
+        std::cin >> sortCriterion;
+
+        sortRates(rates, sortMethod, sortCriterion);
+        printRates(rates);
+
     default:
         std::cout << "Unknown operation";
-        break;
     }
 
     if (check_function)
