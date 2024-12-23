@@ -7,7 +7,7 @@
 #include "sort.h"
 
 void printRates(std::vector<exchangeRate>& rates) {
-    for (int i = 0; i < rates.size() - 1; i++)
+    for (int i = 0; i < rates.size(); i++)
     {
         std::cout << "Bank........: ";
         std::cout << rates[i].bank_name;
@@ -57,15 +57,19 @@ int main()
 
     switch (choice) {
     case 1:
+        check_function = checkSberbank;
+        std::cout << "**** Sberbank **** \n\n";
+        break;
+    case 2:
         check_function = checkBelarusbank; //       
         std::cout << "**** BELARUSBANK ****\n\n";
         break;
-    case 2:
+    case 3:
         check_function = checkSaleLessThan2_5; //       
         std::cout << "****   sale<2.5   ****\n\n";
         break;
 
-    case 3:
+    case 4:
         int sortMethod, sortCriterion;
         std::cout << "1.Bubble Sort" << std::endl;
         std::cout << "2.Merge Sort" << std::endl;
@@ -84,7 +88,7 @@ int main()
 
     if (check_function)
     {
-        std::vector<exchangeRate> filtered = filter(rates, rates.size() - 1, check_function);
+        std::vector<exchangeRate> filtered = filter(rates, rates.size(), check_function);
         printRates(filtered);
     }
 

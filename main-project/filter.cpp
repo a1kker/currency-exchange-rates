@@ -25,3 +25,9 @@ bool checkBelarusbank(exchangeRate rate)
 	return strcmp(rate.bank_name.c_str(), "Belarusbank") == 0;
 }
 
+bool checkSberbank(exchangeRate rate)
+{
+	return (strcmp(rate.bank_name.c_str(), "Sberbank") == 0) && (strcmp(rate.bank_adress.street.c_str(), "Frunze") == 0);
+
+}
+

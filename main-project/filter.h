@@ -8,7 +8,8 @@
 std::vector<exchangeRate> filter(std::vector<exchangeRate>& array, int size, bool (*check)(exchangeRate rate));
 
 bool checkSaleLessThan2_5(exchangeRate rate);
-
+bool checkSberbank(exchangeRate rate);
 bool checkBelarusbank(exchangeRate rate);
+
 
 #endif

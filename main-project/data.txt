@@ -5,4 +5,5 @@ Belagroprombank 3.9 4.1 Vitebsk Chapaeva 12
 Sberbank 2.8 2.9 Vitebsk Frunze 22
 Belarusbank 2.2 2.3 Vitebsk Pravdy 45
 Belarusbank 2.0 2.2 Vitebsk Smolenskaya 34
-
+Sberbank 2.5 2.6 Vitebsk Frunze 2
+Sberbank 2.4 2.2 Vitebsk Frunze 24
